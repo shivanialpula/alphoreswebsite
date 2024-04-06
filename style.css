@@ -1,0 +1,165 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.outerbox{
+	border: solid 1px;
+	height: 140px;
+	display: flex;
+}
+#box1,#box2,#box3{
+	border: solid 1px;
+	height: 140px;
+}
+#box1{
+	width: 200px;
+}
+#box2{
+	width: 950px;
+	text-align: center;
+	background-color: gold; 
+}
+#box3{
+	width: 200px;
+}
+#clgname{
+	color: red;
+	font-size:50px;
+}
+#text1{
+	font-size: 30px;
+	font-weight: bold;
+}
+#text2{
+	font-size: 30px;
+	font-weight: bold;
+	color: navy;
+}
+#scrolltext{
+	font-size: 25px;
+	font-weight: bold;
+}
+.nav{
+	border: solid 1px;
+	height: 50px;
+}
+ul li{
+	border: solid 1px;
+	height: 50px;
+	width: 160px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	background-color:#ab65a9
+}
+ul{
+	list-style: none;
+}
+ul li a{
+	color: black;
+	font-size: 22px;
+	text-decoration: none;
+}
+ul li ul li{
+	display: none;
+}
+ul li:hover ul li{
+	display: block;
+}
+.obox{
+	border: solid 1px;
+	height: 350px;
+	display: flex;
+	justify-content: space-between;
+}
+#in1,#in2,#in3{
+	border: solid 1px;
+	height: 350px;
+	z-index: -1;
+}
+#in1{
+	width: 600px;
+	background-image: url(img1.jpg);
+	background-repeat: no-repeat;
+	background-size: 600px 350px;
+	animation-name: imgchange;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+	10%{
+		background-image: url(img2.jpg);
+	}
+	20%{
+		background-image: url(img3.jpg);
+	}
+	30%{
+		background-image: url(img4.jpg);
+	}
+	40%{
+		background-image: url(img5.jpg);
+	}
+	50%{
+		background-image: url(img6.jpg);
+	}
+}
+#in2,#in3{
+	width: 350px;
+}
+#placements{
+	border: solid 1px;
+	height: 300px;
+}
+.header{
+	border: solid 1px;
+	height: 50px;
+	background-color:silver;
+	line-height:50px;
+	padding-left: 110px;
+}
+#head1{
+	padding-right: 35px;
+	color: navy;
+	font-size:22px;
+	text-decoration: none;
+}
+.out{
+	border: solid 1px;
+	height: 510px;
+	display:flex;
+}
+#ug,#pg{
+	border: solid 2px;
+	height: 490px;
+}
+#ug,#pg{
+	width: 672px;
+margin: 10px;
+border-radius: 20px;
+}
+#course{
+	border: solid 1px;
+	height: 40px;
+	margin: 20px;
+	border-radius: 20px;
+	padding-left: 18px;
+	line-height: 40px;
+	background-color:skyblue;	
+	font-size: 20px;
+	font-weight: bold;
+}
+#ug{
+	background-color: #fad9f9;
+}
+#course:hover{
+	background-color: #121b40;
+}
+#pg{
+	background-color: #fad9f9;
+}
+#course:hover{
+	background-color: #1e4d38;
+}
+ul li:hover{
+	background-color: skyblue;
+}
